@@ -48,7 +48,7 @@ export function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-5xl md:text-7xl lg:text-8xl font-bold text-neutral-200 mb-6 tracking-widest uppercase"
+                    className="text-6xl md:text-8xl font-bold text-neutral-200 mb-6 tracking-widest uppercase leading-none"
                 >
                     KYO WEAR
                 </motion.h1>

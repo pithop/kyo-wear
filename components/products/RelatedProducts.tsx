@@ -1,3 +1,5 @@
+'use client';
+
 import { products } from '@/lib/products';
 import { ProductCard } from '@/components/products/ProductCard';
 import { useTranslations } from 'next-intl';

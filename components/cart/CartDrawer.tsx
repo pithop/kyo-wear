@@ -78,8 +78,8 @@ export function CartDrawer() {
                                         animate={{ width: `${shippingProgress}%` }}
                                         transition={{ duration: 0.5, ease: 'easeOut' }}
                                         className={`h-full ${hasFreeShipping
-                                                ? 'bg-gradient-to-r from-yellow-500 to-yellow-400'
-                                                : 'bg-accent'
+                                            ? 'bg-gradient-to-r from-yellow-500 to-yellow-400'
+                                            : 'bg-accent'
                                             }`}
                                     />
                                 </div>
@@ -118,7 +118,7 @@ export function CartDrawer() {
                                             >
                                                 <div className="relative w-20 h-24 flex-shrink-0 bg-neutral-800">
                                                     <Image
-                                                        src={item.image}
+                                                        src={item.images[0]}
                                                         alt={item.name}
                                                         fill
                                                         className="object-cover"

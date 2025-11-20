@@ -1,4 +1,4 @@
-'use client';
+
 
 import Image from 'next/image';
 import { products } from '@/lib/products';
@@ -20,22 +20,30 @@ export default async function ProductPage({ params }: ProductPageProps) {
     }
 
     return (
-        <div className="container mx-auto px-4 py-20">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
-                {/* Product Image */}
-                <div className="relative aspect-[3/4] bg-neutral-900">
-                    <Image
-                        src={product.image}
-                        alt={product.name}
-                        fill
-                        className="object-cover"
-                        priority
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                    />
+        <div className="container mx-auto px-4 py-8 md:py-20">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-20 mb-20">
+                {/* Left Column: Image Gallery (Vertical Stack) */}
+                <div className="lg:col-span-7 flex flex-col gap-4">
+                    {product.images.map((image, index) => (
+                        <div key={index} className="relative w-full aspect-[3/4] bg-neutral-900 overflow-hidden">
+                            <Image
+                                src={image}
+                                alt={`${product.name} - View ${index + 1}`}
+                                fill
+                                className="object-cover"
+                                priority={index === 0}
+                                sizes="(max-width: 768px) 100vw, 60vw"
+                            />
+                        </div>
+                    ))}
                 </div>
 
-                {/* Product Info with Size Recommender */}
-                <ProductInfo product={product} />
+                {/* Right Column: Product Details (Sticky) */}
+                <div className="lg:col-span-5 relative">
+                    <div className="sticky top-24 h-fit">
+                        <ProductInfo product={product} />
+                    </div>
+                </div>
             </div>
 
             {/* Product DNA */}

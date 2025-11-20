@@ -14,15 +14,7 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ product }: ProductCardProps) {
-    const { addToCart, toggleCart } = useCart();
-    const t = useTranslations('ProductCard');
     const [isHovering, setIsHovering] = useState(false);
-
-    const handleAddToCart = (e: React.MouseEvent) => {
-        e.preventDefault();
-        addToCart(product);
-        toggleCart();
-    };
 
     return (
         <motion.div
@@ -30,12 +22,12 @@ export function ProductCard({ product }: ProductCardProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            whileHover={{ y: -10 }}
+            whileHover={{ y: -5 }}
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
             className="group relative bg-surface border border-neutral-800 overflow-hidden"
         >
-            <Link href={`/product/${product.id}`} className="block">
+            <Link href={`/product/${product.id}`} className="block h-full">
                 <div className="relative aspect-[3/4] overflow-hidden bg-neutral-900">
                     {/* Video or Image */}
                     {product.videoUrl ? (
@@ -63,7 +55,7 @@ export function ProductCard({ product }: ProductCardProps) {
                                 className="absolute inset-0"
                             >
                                 <Image
-                                    src={product.image}
+                                    src={product.images[0]}
                                     alt={product.name}
                                     fill
                                     className="object-cover"
@@ -72,33 +64,40 @@ export function ProductCard({ product }: ProductCardProps) {
                             </motion.div>
                         </>
                     ) : (
-                        <motion.div
-                            whileHover={{ scale: 1.05 }}
-                            transition={{ duration: 0.4 }}
-                            className="w-full h-full"
-                        >
-                            <Image
-                                src={product.image}
-                                alt={product.name}
-                                fill
-                                className="object-cover"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                            />
-                        </motion.div>
+                        <>
+                            {/* Secondary Image (Hover) */}
+                            {product.images[1] && (
+                                <motion.div
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: isHovering ? 1 : 0 }}
+                                    transition={{ duration: 0.4 }}
+                                    className="absolute inset-0 z-10"
+                                >
+                                    <Image
+                                        src={product.images[1]}
+                                        alt={`${product.name} - Alternate View`}
+                                        fill
+                                        className="object-cover"
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    />
+                                </motion.div>
+                            )}
+
+                            {/* Main Image */}
+                            <div className="w-full h-full">
+                                <Image
+                                    src={product.images[0]}
+                                    alt={product.name}
+                                    fill
+                                    className="object-cover"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                />
+                            </div>
+                        </>
                     )}
 
-                    {/* Overlay Gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
-
-                    {/* Quick Add Button */}
-                    <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out">
-                        <Button
-                            onClick={handleAddToCart}
-                            className="w-full shadow-lg shadow-black/50"
-                        >
-                            {t('addToCart')}
-                        </Button>
-                    </div>
+                    {/* Overlay Gradient - Subtle */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
 
                 <div className="p-4">

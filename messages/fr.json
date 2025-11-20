@@ -5,6 +5,13 @@
         "shopCollection": "Voir la Collection",
         "viewLookbook": "Voir le Lookbook"
     },
+    "Header": {
+        "cart": "Panier",
+        "menu": "Menu"
+    },
+    "ProductCard": {
+        "addToCart": "Ajouter au Panier"
+    },
     "Products": {
         "latestDrops": "Dernières Sorties",
         "addToCart": "Ajouter au Panier",
