@@ -7,6 +7,8 @@ import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 
+import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher';
+
 export function Header() {
     const { toggleCart, items } = useCart();
     const itemCount = items.reduce((acc, item) => acc + item.quantity, 0);
@@ -37,9 +39,9 @@ export function Header() {
                         KYO WEAR
                     </Link>
 
-                    {/* Desktop Nav (Optional - currently just logo and cart) */}
+                    {/* Desktop Nav */}
                     <div className="hidden md:flex items-center gap-8">
-                        {/* Add desktop links here if needed later */}
+                        <LanguageSwitcher />
                     </div>
 
                     <button
@@ -86,7 +88,11 @@ export function Header() {
                             >
                                 Shop
                             </Link>
-                            {/* Add more links as pages are built */}
+
+                            <div className="mt-8 pt-8 border-t border-neutral-800">
+                                <p className="text-neutral-500 text-sm uppercase tracking-widest mb-4">Language</p>
+                                <LanguageSwitcher />
+                            </div>
                         </nav>
                     </motion.div>
                 )}

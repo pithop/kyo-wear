@@ -12,6 +12,7 @@ import { CartDrawer } from "@/components/cart/CartDrawer";
 import { CookieConsent } from "@/components/ui/CookieConsent";
 import { SmoothScroll } from "@/components/ui/SmoothScroll";
 import { Analytics } from "@vercel/analytics/next";
+import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,8 +25,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kyo Wear | Premium Streetwear - Aix-en-Provence",
-  description: "Japanese-inspired streetwear designed in Val Saint André. Limited edition prints.",
+  title: {
+    template: '%s | Kyo Wear - Marque Streetwear Japonais Premium',
+    default: 'Kyo Wear | Premium Streetwear - Aix-en-Provence',
+  },
+  description: "Découvrez Kyo Wear : L'alliance du design minimaliste d'Aix-en-Provence et du style streetwear japonais. Hoodies, Pantalons Cargo et Kimonos Noragi haut de gamme.",
+  keywords: ["streetwear japonais homme", "marque streetwear france", "pantalon cargo techwear", "hoodie oversize japonais", "mode tokyo"],
   openGraph: {
     title: "Kyo Wear | Premium Streetwear",
     description: "Japanese-inspired streetwear designed in Val Saint André. Limited edition prints.",
@@ -79,6 +84,7 @@ export default async function LocaleLayout({
               <CartDrawer />
               <CookieConsent />
               <Analytics />
+              <SchemaMarkup />
             </CartProvider>
           </NextIntlClientProvider>
         </SmoothScroll>

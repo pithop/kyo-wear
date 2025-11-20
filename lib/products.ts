@@ -21,7 +21,7 @@ export const products: Product[] = [
         ],
         image: '/products/hoodie-main.jpg', // Fallback
         category: 'Hoodies',
-        description: 'The Tokyo Noir Hoodie is the epitome of urban stealth. Crafted from 480GSM heavyweight French Terry cotton, it features a boxy, oversized fit with dropped shoulders. The deep black dye is fade-resistant, ensuring the "midnight" aesthetic lasts. Finished with raw hems and a double-lined hood for structure.',
+        description: 'The Tokyo Noir Hoodie is the epitome of urban stealth. Featuring a "Coupe Oversize Japonaise" and crafted from "Coton Lourd" (480GSM), it embodies the "Style Harajuku". The deep black dye is fade-resistant, ensuring the "midnight" aesthetic lasts. Finished with raw hems and a double-lined hood for structure.',
     },
     {
         id: '2',
@@ -57,7 +57,7 @@ export const products: Product[] = [
         ],
         image: '/products/cargo-main.jpg', // Fallback
         category: 'Pants',
-        description: 'Engineered for the urban explorer. The Osaka Tech Cargos are constructed from water-resistant nylon ripstop. Features articulated knees for movement and six functional pockets with magnetic closures. The fit is tapered with adjustable ankle toggles to customize the silhouette.',
+        description: 'Engineered for the urban explorer. These "Pantalon Streetwear Japonais" are the ultimate "Techwear Utility" piece. Featuring a "Coupe Large" and constructed from water-resistant nylon ripstop. Features articulated knees for movement and six functional pockets with magnetic closures.',
     },
     {
         id: '5',
@@ -93,6 +93,6 @@ export const products: Product[] = [
         ],
         image: '/products/noragi-main.jpg',
         category: 'Outerwear',
-        description: 'A modern reinterpretation of the traditional Japanese workwear jacket. Crafted from a heavy waffle-knit cotton blend for texture and warmth. The relaxed, collarless silhouette drapes effortlessly, making it the perfect layering piece for transitional weather.',
+        description: 'A modern reinterpretation of the traditional Japanese workwear jacket. This "Veste Kimono Moderne" defines the "Style Samourai Urbain". Perfect for "Layering Japonais", it is crafted from a heavy waffle-knit cotton blend for texture and warmth. The relaxed, collarless silhouette drapes effortlessly.',
     },
 ];
