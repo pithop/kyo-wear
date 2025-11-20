@@ -1,0 +1,97 @@
+{
+    "Hero": {
+        "title": "KYO WEAR",
+        "subtitle": "Streetwear d'Aix-en-Provence",
+        "shopCollection": "Voir la Collection",
+        "viewLookbook": "Voir le Lookbook"
+    },
+    "Products": {
+        "latestDrops": "Dernières Sorties",
+        "addToCart": "Ajouter au Panier",
+        "youMightAlsoLike": "Vous aimerez aussi",
+        "size": "Taille",
+        "description": "Streetwear de qualité supérieure conçu à Aix-en-Provence. Coupe décontractée, coton épais et notre style signature Kyo. Parfait pour les sorties nocturnes ou le quotidien."
+    },
+    "Cart": {
+        "title": "Panier",
+        "empty": "Votre panier est vide",
+        "emptySubtitle": "Ajoutez des articles pour commencer",
+        "subtotal": "Sous-total",
+        "checkout": "Commander",
+        "freeShippingProgress": "Il vous reste €{amount} pour bénéficier de la Livraison Express Gratuite",
+        "freeShippingUnlocked": "Livraison Gratuite Débloquée"
+    },
+    "Checkout": {
+        "title": "Paiement",
+        "orderSummary": "Récapitulatif",
+        "contactInfo": "Coordonnées",
+        "shippingAddress": "Adresse de livraison",
+        "payment": "Paiement",
+        "payNow": "Payer maintenant",
+        "subtotal": "Sous-total",
+        "shipping": "Livraison",
+        "free": "Gratuit",
+        "total": "Total",
+        "qty": "Qté",
+        "creditCard": "Carte de crédit",
+        "placeholders": {
+            "email": "Adresse e-mail",
+            "firstName": "Prénom",
+            "lastName": "Nom",
+            "address": "Adresse",
+            "city": "Ville",
+            "postalCode": "Code postal",
+            "cardNumber": "Numéro de carte",
+            "expiration": "Expiration (MM/AA)",
+            "cvc": "CVC"
+        }
+    },
+    "Footer": {
+        "designedIn": "Conçu à Aix-en-Provence",
+        "rights": "Tous droits réservés."
+    },
+    "Legal": {
+        "cookieText": "Nous utilisons des cookies pour améliorer votre expérience. En continuant à visiter ce site, vous acceptez notre utilisation des cookies.",
+        "privacyPolicy": "Politique de Confidentialité",
+        "accept": "Accepter",
+        "privacyTitle": "Politique de Confidentialité",
+        "privacyIntro": "Chez Kyo Wear, nous nous engageons à protéger votre vie privée. Cette politique décrit comment nous collectons, utilisons et protégeons vos informations personnelles.",
+        "dataCollectionTitle": "Collecte de Données",
+        "dataCollectionText": "Nous collectons les informations que vous nous fournissez directement, par exemple lorsque vous créez un compte, effectuez un achat ou vous inscrivez à notre newsletter.",
+        "cookiesTitle": "Cookies",
+        "cookiesText": "Nous utilisons des cookies pour améliorer les fonctionnalités de notre site Web et analyser le trafic. Vous pouvez contrôler les paramètres des cookies via votre navigateur.",
+        "contactTitle": "Nous Contacter",
+        "contactText": "Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter à support@kyowear.com."
+    },
+    "Success": {
+        "title": "Commande Confirmée",
+        "message": "Merci pour votre achat. Votre commande a bien été reçue.",
+        "orderNumber": "Numéro de commande",
+        "continueShopping": "Continuer vos achats"
+    },
+    "NotFound": {
+        "title": "Perdu à Tokyo ?",
+        "message": "La page que vous recherchez semble avoir disparu dans les néons.",
+        "returnHome": "Retour à l'accueil"
+    },
+    "SizeRecommender": {
+        "title": "Algorithme de Taille Parfaite",
+        "height": "Taille",
+        "weight": "Poids",
+        "fitPreference": "Préférence de Coupe",
+        "slim": "Coupe Ajustée",
+        "oversized": "Coupe Oversize",
+        "calculate": "Calculer Ma Taille",
+        "recommendation": "Selon vos mensurations, votre taille parfaite est"
+    },
+    "ProductDNA": {
+        "title": "ADN du Produit",
+        "origin": "Origine",
+        "originValue": "Conçu à Aix-en-Provence",
+        "material": "Matière",
+        "materialValue": "Coton French Terry 400GSM",
+        "cut": "Coupe",
+        "cutValue": "Coupe Ample / Épaules Tombantes",
+        "disclaimer": "Chaque pièce est fabriquée avec précision et soin. Production en édition limitée garantissant l'exclusivité."
+    }
+}

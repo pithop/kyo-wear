@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kyo Wear - Premium Streetwear E-Commerce
+
+A "Print on Demand" E-Commerce Web Application for "KYO WEAR" with a "Night Mode" Luxury design aesthetic. Built with Next.js 14, Tailwind CSS, and Stripe.
+
+## Features
+
+- **Design:** Custom "Night Mode" luxury aesthetic.
+- **Internationalization:** English, French, Spanish support using `next-intl`.
+- **Payments:** Stripe integration with Payment Element.
+- **Legal:** GDPR compliant Cookie Consent and Privacy Policy.
+- **SEO:** Optimized metadata and OpenGraph tags.
 
 ## Getting Started
 
-First, run the development server:
+1.  **Clone the repository:**
+    ```bash
+    git clone <repository-url>
+    cd kyo-wear-pod
+    ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3.  **Environment Setup:**
+    Create a `.env.local` file in the root directory with the following keys:
+    ```env
+    NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
+    STRIPE_SECRET_KEY=sk_test_...
+    ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4.  **Run Development Server:**
+    ```bash
+    npm run dev
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+This project is optimized for deployment on **Vercel**.
 
-To learn more about Next.js, take a look at the following resources:
+1.  Push your code to a GitHub repository.
+2.  Import the repository in Vercel.
+3.  Add the Environment Variables (`NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY`, `STRIPE_SECRET_KEY`) in the Vercel dashboard.
+4.  Deploy!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Print on Demand Integration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To integrate with Printful or Printify:
+1.  Obtain API keys from your provider.
+2.  Create a new API route (e.g., `app/api/create-order/route.ts`) to handle order creation webhook from Stripe.
+3.  Upon successful payment (verified via Stripe Webhook), send the order details to the POD provider's API.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All rights reserved. Designed in Aix-en-Provence.

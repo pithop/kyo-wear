@@ -1,0 +1,97 @@
+{
+    "Hero": {
+        "title": "KYO WEAR",
+        "subtitle": "Ropa urbana de Aix-en-Provence",
+        "shopCollection": "Ver Colección",
+        "viewLookbook": "Ver Lookbook"
+    },
+    "Products": {
+        "latestDrops": "Últimos Lanzamientos",
+        "addToCart": "Añadir al Carrito",
+        "youMightAlsoLike": "También te podría gustar",
+        "size": "Talla",
+        "description": "Ropa urbana de primera calidad diseñada en Aix-en-Provence. Ajuste relajado, algodón pesado y nuestro estilo característico Kyo. Perfecto para salidas nocturnas o uso diario."
+    },
+    "Cart": {
+        "title": "Carrito de Compras",
+        "empty": "Tu carrito está vacío",
+        "emptySubtitle": "Añade algunos artículos para empezar",
+        "subtotal": "Subtotal",
+        "checkout": "Finalizar Compra",
+        "freeShippingProgress": "Te faltan €{amount} para conseguir Envío Express Gratuito",
+        "freeShippingUnlocked": "Envío Gratis Desbloqueado"
+    },
+    "Checkout": {
+        "title": "Pago",
+        "orderSummary": "Resumen del pedido",
+        "contactInfo": "Información de contacto",
+        "shippingAddress": "Dirección de envío",
+        "payment": "Pago",
+        "payNow": "Pagar ahora",
+        "subtotal": "Subtotal",
+        "shipping": "Envío",
+        "free": "Gratis",
+        "total": "Total",
+        "qty": "Cant",
+        "creditCard": "Tarjeta de crédito",
+        "placeholders": {
+            "email": "Correo electrónico",
+            "firstName": "Nombre",
+            "lastName": "Apellido",
+            "address": "Dirección",
+            "city": "Ciudad",
+            "postalCode": "Código postal",
+            "cardNumber": "Número de tarjeta",
+            "expiration": "Vencimiento (MM/AA)",
+            "cvc": "CVC"
+        }
+    },
+    "Footer": {
+        "designedIn": "Diseñado en Aix-en-Provence",
+        "rights": "Todos los derechos reservados."
+    },
+    "Legal": {
+        "cookieText": "Utilizamos cookies para mejorar su experiencia. Al continuar visitando este sitio, acepta nuestro uso de cookies.",
+        "privacyPolicy": "Política de Privacidad",
+        "accept": "Aceptar",
+        "privacyTitle": "Política de Privacidad",
+        "privacyIntro": "En Kyo Wear, nos comprometemos a proteger su privacidad. Esta política describe cómo recopilamos, utilizamos y protegemos su información personal.",
+        "dataCollectionTitle": "Recopilación de Datos",
+        "dataCollectionText": "Recopilamos la información que nos proporciona directamente, como cuando crea una cuenta, realiza una compra o se suscribe a nuestro boletín.",
+        "cookiesTitle": "Cookies",
+        "cookiesText": "Utilizamos cookies para mejorar la funcionalidad de nuestro sitio web y analizar el tráfico. Puede controlar la configuración de cookies a través de su navegador.",
+        "contactTitle": "Contáctenos",
+        "contactText": "Si tiene alguna pregunta sobre esta Política de Privacidad, contáctenos en support@kyowear.com."
+    },
+    "Success": {
+        "title": "Pedido Confirmado",
+        "message": "Gracias por su compra. Su pedido ha sido recibido.",
+        "orderNumber": "Número de pedido",
+        "continueShopping": "Seguir comprando"
+    },
+    "NotFound": {
+        "title": "¿Perdido en Tokio?",
+        "message": "La página que buscas parece haberse desvanecido entre las luces de neón.",
+        "returnHome": "Volver al inicio"
+    },
+    "SizeRecommender": {
+        "title": "Algoritmo de Talla Perfecta",
+        "height": "Altura",
+        "weight": "Peso",
+        "fitPreference": "Preferencia de Ajuste",
+        "slim": "Ajuste Delgado",
+        "oversized": "Oversized",
+        "calculate": "Calcular Mi Talla",
+        "recommendation": "Según tus medidas, tu talla perfecta es"
+    },
+    "ProductDNA": {
+        "title": "ADN del Producto",
+        "origin": "Origen",
+        "originValue": "Diseñado en Aix-en-Provence",
+        "material": "Material",
+        "materialValue": "Algodón French Terry 400GSM",
+        "cut": "Corte",
+        "cutValue": "Corte Holgado / Hombros Caídos",
+        "disclaimer": "Cada pieza se elabora con precisión y cuidado. Producción de edición limitada garantizando exclusividad."
+    }
+}

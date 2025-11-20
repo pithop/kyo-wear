@@ -1,0 +1,97 @@
+{
+    "Hero": {
+        "title": "KYO WEAR",
+        "subtitle": "Streetwear from Aix-en-Provence",
+        "shopCollection": "Shop Collection",
+        "viewLookbook": "View Lookbook"
+    },
+    "Products": {
+        "latestDrops": "Latest Drops",
+        "addToCart": "Add to Cart",
+        "youMightAlsoLike": "You Might Also Like",
+        "size": "Size",
+        "description": "Premium quality streetwear designed in Aix-en-Provence. Features a relaxed fit, heavy-weight cotton fabric, and our signature Kyo styling. Perfect for night outs or casual wear."
+    },
+    "Cart": {
+        "title": "Shopping Cart",
+        "empty": "Your cart is empty",
+        "emptySubtitle": "Add some items to get started",
+        "subtotal": "Subtotal",
+        "checkout": "Checkout",
+        "freeShippingProgress": "You are €{amount} away from Free Express Shipping",
+        "freeShippingUnlocked": "Free Shipping Unlocked"
+    },
+    "Checkout": {
+        "title": "Checkout",
+        "orderSummary": "Order Summary",
+        "contactInfo": "Contact Information",
+        "shippingAddress": "Shipping Address",
+        "payment": "Payment",
+        "payNow": "Pay Now",
+        "subtotal": "Subtotal",
+        "shipping": "Shipping",
+        "free": "Free",
+        "total": "Total",
+        "qty": "Qty",
+        "creditCard": "Credit Card",
+        "placeholders": {
+            "email": "Email address",
+            "firstName": "First name",
+            "lastName": "Last name",
+            "address": "Address",
+            "city": "City",
+            "postalCode": "Postal code",
+            "cardNumber": "Card number",
+            "expiration": "Expiration (MM/YY)",
+            "cvc": "CVC"
+        }
+    },
+    "Footer": {
+        "designedIn": "Designed in Aix-en-Provence",
+        "rights": "All rights reserved."
+    },
+    "Legal": {
+        "cookieText": "We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.",
+        "privacyPolicy": "Privacy Policy",
+        "accept": "Accept",
+        "privacyTitle": "Privacy Policy",
+        "privacyIntro": "At Kyo Wear, we are committed to protecting your privacy. This policy outlines how we collect, use, and safeguard your personal information.",
+        "dataCollectionTitle": "Data Collection",
+        "dataCollectionText": "We collect information you provide directly to us, such as when you create an account, make a purchase, or sign up for our newsletter.",
+        "cookiesTitle": "Cookies",
+        "cookiesText": "We use cookies to improve our website functionality and analyze traffic. You can control cookie settings through your browser.",
+        "contactTitle": "Contact Us",
+        "contactText": "If you have any questions about this Privacy Policy, please contact us at support@kyowear.com."
+    },
+    "Success": {
+        "title": "Order Confirmed",
+        "message": "Thank you for your purchase. Your order has been received.",
+        "orderNumber": "Order Number",
+        "continueShopping": "Continue Shopping"
+    },
+    "NotFound": {
+        "title": "Lost in Tokyo?",
+        "message": "The page you are looking for seems to have vanished into the neon lights.",
+        "returnHome": "Return Home"
+    },
+    "SizeRecommender": {
+        "title": "Perfect Fit Algorithm",
+        "height": "Height",
+        "weight": "Weight",
+        "fitPreference": "Fit Preference",
+        "slim": "Slim Fit",
+        "oversized": "Oversized",
+        "calculate": "Calculate My Size",
+        "recommendation": "Based on your biometrics, your perfect fit is"
+    },
+    "ProductDNA": {
+        "title": "Product DNA",
+        "origin": "Origin",
+        "originValue": "Designed in Aix-en-Provence",
+        "material": "Material",
+        "materialValue": "400GSM French Terry Cotton",
+        "cut": "Cut",
+        "cutValue": "Boxy Fit / Drop Shoulder",
+        "disclaimer": "Each piece is crafted with precision and care. Limited edition production ensures exclusivity."
+    }
+}
