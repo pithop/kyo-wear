@@ -17,7 +17,7 @@ export function OrderSummary() {
                     <div key={item.id} className="flex gap-4">
                         <div className="relative w-16 h-16 bg-neutral-900 flex-shrink-0">
                             <Image
-                                src={item.image}
+                                src={item.images[0] || item.image || ''}
                                 alt={item.name}
                                 fill
                                 className="object-cover"

@@ -11,6 +11,7 @@ import { Footer } from "@/components/layout/Footer";
 import { CartDrawer } from "@/components/cart/CartDrawer";
 import { CookieConsent } from "@/components/ui/CookieConsent";
 import { SmoothScroll } from "@/components/ui/SmoothScroll";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -77,6 +78,7 @@ export default async function LocaleLayout({
               <Footer />
               <CartDrawer />
               <CookieConsent />
+              <Analytics />
             </CartProvider>
           </NextIntlClientProvider>
         </SmoothScroll>
